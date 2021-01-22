@@ -13,3 +13,6 @@ $cr = (Get-WmiObject Win32_Processor).NumberOfLogicalProcessors
 }
 
 Register-ScheduledJob "Final" -Trigger $trigger -ScheduledJobOption $A -ScriptBlock $is
+
+#tarih kısmını ayarlamayı unutmayın ^^
+#Unregister-ScheduledJob 'Final'
